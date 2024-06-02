@@ -50,6 +50,18 @@ public class CacheConfiguration {
             createCache(cm, com.syyoon.jobapp.domain.User.class.getName());
             createCache(cm, com.syyoon.jobapp.domain.Authority.class.getName());
             createCache(cm, com.syyoon.jobapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.syyoon.jobapp.domain.Region.class.getName());
+            createCache(cm, com.syyoon.jobapp.domain.Country.class.getName());
+            createCache(cm, com.syyoon.jobapp.domain.Location.class.getName());
+            createCache(cm, com.syyoon.jobapp.domain.Department.class.getName());
+            createCache(cm, com.syyoon.jobapp.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.syyoon.jobapp.domain.Task.class.getName());
+            createCache(cm, com.syyoon.jobapp.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.syyoon.jobapp.domain.Employee.class.getName());
+            createCache(cm, com.syyoon.jobapp.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.syyoon.jobapp.domain.Job.class.getName());
+            createCache(cm, com.syyoon.jobapp.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.syyoon.jobapp.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
